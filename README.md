@@ -2,6 +2,8 @@
 
 A Node-JS and Python package for visualizing the Mandelbrot set. 
 
+![Valley](static/seahorse_valley.jpg)
+
 ## Installation 
 
 ### Node Package
@@ -24,11 +26,20 @@ pip install .
 
 ### Generate Mandelbrot Data
 
-TODO ... 
+```
+node js-mandelbrot/bin/mandelbrot.js \             
+  -x -0.7435669 -y 0.1314023 \
+  -w 0.0022878 -h 0.0022878 \
+  -s 1e-5 \
+  -n 2000 \
+> seahorse_tail.json
+```
 
 ### Visualization 
 
-TODO ... 
+```
+mandelbrot-vis seahorse_tail.json seahorse_tail.png
+```
 
 ### Pre-Configured Bash Script
 
