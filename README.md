@@ -1,6 +1,6 @@
 # Mandelbrot 
 
-A Node-JS and Python package for visualizing the Mandelbrot set. 
+Visualization of the Mandelbrot Set with Python and Node-JS
 
 ## Installation 
 
