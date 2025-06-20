@@ -1,8 +1,15 @@
 # Mandelbrot 
 
-Visualization of the Mandelbrot Set with Python and Node-JS
+Visualuzation of the Mandelbrot Set using Node-JS and Python
 
-![Valley](static/seahorse_valley.jpg)
+
+<!-- or relative to container -->
+<img src="static/seahorse_valley.jpg" alt="Valley" style="width:60%;"/>
+
+## Overview
+
+A cross-language project that uses Node-JS to generate data from the Mandelbrot Set and Python to visualize the result using Matplotlib. Both
+packages are self-contained within command line scripts. 
 
 ## Installation 
 
