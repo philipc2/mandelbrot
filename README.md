@@ -18,7 +18,6 @@ packages are self-contained within command line scripts.
 ```shell
 cd js-mandelbrot
 npm install 
-
 ```
 
 ### Python Package
@@ -26,7 +25,6 @@ npm install
 ```shell
 cd py-mandelbrot
 pip install .
-
 ```
 
 ## Usage
