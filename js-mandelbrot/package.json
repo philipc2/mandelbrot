@@ -1,0 +1,11 @@
+{
+  "name": "js-mandelbrot",
+  "version": "0.1.0",
+  "author": "Philip Chmielowiec <chmielowiec.philip@gmail.com>",
+  "bin": {
+    "mandelbrot-gen": "bin/mandelbrot.js"
+  },
+  "dependencies": {
+    "commander": "^10.0.0"
+  }
+}
