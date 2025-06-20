@@ -8,7 +8,7 @@ Visualization of the Mandelbrot Set with Python and Node-JS
 
 ### Node Package
 
-```
+```shell
 cd js-mandelbrot
 npm install 
 
@@ -16,7 +16,7 @@ npm install
 
 ### Python Package
 
-```
+```shell
 cd py-mandelbrot
 pip install .
 
@@ -26,7 +26,7 @@ pip install .
 
 ### Generate Mandelbrot Data
 
-```
+```shell
 node js-mandelbrot/bin/mandelbrot.js \             
   -x -0.7435669 -y 0.1314023 \
   -w 0.0022878 -h 0.0022878 \
@@ -37,7 +37,7 @@ node js-mandelbrot/bin/mandelbrot.js \
 
 ### Visualization 
 
-```
+```shell
 mandelbrot-vis seahorse_tail.json seahorse_tail.png
 ```
 
