@@ -11,41 +11,51 @@ Visualuzation of the Mandelbrot Set using Node-JS and Python
 A cross-language project that uses Node-JS to generate data from the Mandelbrot Set and Python to visualize the result using Matplotlib. Both
 packages are self-contained within command line scripts. 
 
-## Installation 
 
-### Node Package
+
+## Usage 
+
+### Prerequisites
+
+- **Node.js** & npm  
+- **Python 3.8++**, pip  
+- (Optionally) **Conda** to manage your Python env 
+
+
+### 1. Build or install the CLIs
 
 ```shell
+# JS CLI
 cd js-mandelbrot
-npm install 
+npm install    # installs dependencies
+
+# Python CLI
+cd path/to/python-package
+pip install -e .   # registers `mandelbrot-vis`
 ```
 
-### Python Package
+### 2. Generate a JSON View
 
 ```shell
-cd py-mandelbrot
-pip install .
-```
-
-## Usage
-
-### Generate Mandelbrot Data
-
-```shell
-node js-mandelbrot/bin/mandelbrot.js \             
+node js-mandelbrot/bin/mandelbrot.js \
   -x -0.7435669 -y 0.1314023 \
-  -w 0.0022878 -h 0.0022878 \
+  -w 0.0022878  -h 0.0022878 \
   -s 1e-5 \
   -n 2000 \
 > seahorse_tail.json
 ```
 
-### Visualization 
+### 3. Render Image
 
 ```shell
 mandelbrot-vis seahorse_tail.json seahorse_tail.png
 ```
 
-### Pre-Configured Bash Script
+### 4. Preconfigured Scrip
 
-TODO ... 
+```shell
+chmod +x generate_mandelbrot.sh
+conda activate mandelbrot
+./generate_mandelbrot.sh
+```
+
