@@ -1,12 +1,14 @@
 import json
+
 import click
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 from matplotlib import cm
 from matplotlib.colors import PowerNorm
 
+
 @click.command()
-@click.argument('input_file',  type=click.Path(exists=True))
+@click.argument('input_file', type=click.Path(exists=True))
 @click.argument('output_file', type=click.Path(), default='mandelbrot.png')
 def main(input_file, output_file):
     # Load the JSON output from Node-JS package
@@ -22,7 +24,6 @@ def main(input_file, output_file):
     for pix in raw:
         i, j, count = pix['i'], pix['j'], pix['iter']
         iters[j, i] = count
-
 
     max_iter = obj.get('maxIterations', None)
     if max_iter is None:
@@ -44,7 +45,8 @@ def main(input_file, output_file):
                    cmap=cmap, norm=norm)
 
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
-    plt.close(fig)
+    plt.close(fig)git
+
 
 if __name__ == '__main__':
     main()
